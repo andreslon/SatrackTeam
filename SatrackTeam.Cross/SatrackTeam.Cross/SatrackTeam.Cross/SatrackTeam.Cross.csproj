@@ -31,8 +31,17 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SatrackTeam.Infrastructure\SatrackTeam.Infrastructure.csproj">
+      <Project>{80265bc1-4ec7-454e-8528-834468de883d}</Project>
+      <Name>SatrackTeam.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SatrackTeam.Logic\SatrackTeam.Logic.csproj">
+      <Project>{2c785179-0d1d-4ec0-ab4f-2bd8335143d6}</Project>
+      <Name>SatrackTeam.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

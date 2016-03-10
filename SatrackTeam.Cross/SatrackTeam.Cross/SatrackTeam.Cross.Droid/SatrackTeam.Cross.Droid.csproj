@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>4c18a382-b5f8-4a1b-96ab-6d264f9bc1fd</ProjectGuid>
+    <ProjectGuid>{4C18A382-B5F8-4A1B-96AB-6D264F9BC1FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>SatrackTeam.Cross.Droid</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -44,6 +44,10 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\SatrackTeam.Infrastructure\SatrackTeam.Infrastructure.csproj">
+      <Project>{80265bc1-4ec7-454e-8528-834468de883d}</Project>
+      <Name>SatrackTeam.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SatrackTeam.Cross\SatrackTeam.Cross.csproj">
       <Name>SatrackTeam.Cross</Name>
     </ProjectReference>

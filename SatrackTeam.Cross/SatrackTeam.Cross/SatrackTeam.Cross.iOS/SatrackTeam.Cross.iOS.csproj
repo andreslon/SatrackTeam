@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>4570004e-638b-48c7-bed0-07e9c5176efe</ProjectGuid>
+    <ProjectGuid>{4570004E-638B-48C7-BED0-07E9C5176EFE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>SatrackTeam.Cross.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
@@ -67,6 +67,10 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\SatrackTeam.Infrastructure\SatrackTeam.Infrastructure.csproj">
+      <Project>{80265bc1-4ec7-454e-8528-834468de883d}</Project>
+      <Name>SatrackTeam.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SatrackTeam.Cross\SatrackTeam.Cross.csproj">
       <Name>SatrackTeam.Cross</Name>
     </ProjectReference>
