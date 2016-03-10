@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="SatrackTeam.Cross.Views.Base.MenuPage"
+             Icon="icon.png"
+             Title="Menú"
+             BackgroundColor="{StaticResource BackgroundColor}"
+             xmlns:controls="clr-namespace:SatrackTeam.Cross.Controls;assembly=SatrackTeam.Cross">
+  <ContentPage.Content >
+    <StackLayout >
+      <controls:ExtendedListView
+          IsSelectionEnabled="False"
+          SeparatorVisibility="None"
+          SeparatorColor="Transparent"
+          HasUnevenRows="true"
+          x:Name="lstMenu"
+          ItemsSource="{Binding MenuItems}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Padding="15,10" Spacing="20" Orientation="Horizontal">
+                <Image Source="{Binding Icon}" HeightRequest="22" WidthRequest="22"/>
+                <Label Font="14" TextColor="{StaticResource ThemeFontColor}" Text="{Binding Name}" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </controls:ExtendedListView>
+
+
+
+    </StackLayout>
+  </ContentPage.Content>
+
+</ContentPage>

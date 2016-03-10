@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="primary">#fac400</color>
+  <color name="primaryDark">#fac400</color>
+  <color name="accent">#fac400</color>
+  <color name="window_background">#f6f9f6</color>
+</resources>
